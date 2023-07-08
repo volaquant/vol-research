@@ -1,8 +1,9 @@
+import sys
 import yfinance as yf
 import pandas as pd
 from datetime import datetime, timedelta
 
-def dump_prices(ticker = 'BTC-USD'):
+def dump_prices(ticker = 'BTC-USD', start_date = '2021-01-01'):
     # Check existing data
     existing = False
     try:
